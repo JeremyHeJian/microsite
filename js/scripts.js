@@ -53,3 +53,20 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+    
+var myvideo = document.getElementById('splashVideo'),
+  jumplink = document.getElementById('remarks');
+jumplink.addEventListener(
+  'click',
+  function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime = 35;
+    myvideo.play();
+  },
+  false
+);
+ 
+   
